@@ -34,7 +34,7 @@ $(document).on('ready', function () {
             var pageDiv = document.querySelector('.pt-page-current');
             if (pageDiv && pageDiv.classList.contains('pt-page-8')) {
                 $.ajax({
-                    url: 'https://657499f5b2fbb8f6509c6956.mockapi.io/api/weddings/wedding',
+                    url: 'https://657499f5b2fbb8f6509c6956.mockapi.io/api/weddings/wedding-nhi-nghia',
                     method: 'GET',
                     success: function (data) {
                         renderWishBox(data);
@@ -55,7 +55,7 @@ $(document).on('ready', function () {
             var pageDiv = document.querySelector('.pt-page-current');
             if (pageDiv && pageDiv.classList.contains('pt-page-5')) {
                 $.ajax({
-                    url: 'https://657499f5b2fbb8f6509c6956.mockapi.io/api/weddings/wedding',
+                    url: 'https://657499f5b2fbb8f6509c6956.mockapi.io/api/weddings/wedding-nhi-nghia',
                     method: 'GET',
                     success: function (data) {
                         renderWishBox(data);
@@ -363,7 +363,7 @@ document.onreadystatechange = function () {
 $(document).ready(function () {
     $(".wish-box-1").click(function () {
         $.ajax({
-            url: 'https://657499f5b2fbb8f6509c6956.mockapi.io/api/weddings/wedding',
+            url: 'https://657499f5b2fbb8f6509c6956.mockapi.io/api/weddings/wedding-nhi-nghia',
             method: 'GET',
             success: function (data) {
                 renderWishBox(data);
@@ -414,7 +414,7 @@ if ($("#wish-form").length) {
             $("#loader").css("display", "inline-block");
             $.ajax({
                 type: "POST",
-                url: "https://657499f5b2fbb8f6509c6956.mockapi.io/api/weddings/wedding",
+                url: "https://657499f5b2fbb8f6509c6956.mockapi.io/api/weddings/wedding-nhi-nghia",
                 data: $(form).serialize(),
                 success: function (res) {
                     $("#loader").hide();
