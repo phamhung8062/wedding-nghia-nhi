@@ -391,22 +391,22 @@ if ($("#wish-form").length) {
         rules: {
             name: {
                 required: true,
-                minlength: 5
+                minlength: 1
             },
             comment: {
                 required: true,
-                minlength: 10
+                minlength: 5
             }
         },
 
         messages: {
             name: {
                 required: 'Vui lòng nhập tên của bạn ',
-                minlength: 'Tên phải lớn hơn 5 ký tự nhé ',
+                minlength: 'Tên phải lớn hơn 1 ký tự nhé ',
             },
             comment: {
                 required: 'Vui lòng nhập lời chúc.',
-                minlength: 'Lời chúc phải lớn hơn 10 kí tự',
+                minlength: 'Lời chúc phải lớn hơn 5 kí tự',
             }
         },
 
